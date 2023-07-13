@@ -1,0 +1,48 @@
+#containerheader {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+}
+#containerheader > img {
+  height: 100%;
+}
+#containerpesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  padding: 0.5em;
+}
+#containerpesquisa > input {
+  outline: none;
+  border: none;
+  caret-color: #2b1c0f;
+  font-size: 1rem;
+}
+#containerbotoes {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 2vw;
+}
+#containerbotoes > button {
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 1rem
+}
+#containerbotoes button:nth-child(1),
+#containerbotoes button:nth-child(2):hover {
+  color: #2b1c0f;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#containerbotoes button:nth-child(1):hover,
+#containerbotoes button:nth-child(2) {
+  color: #fff;
+  background-color: #2b1c0f;
+}

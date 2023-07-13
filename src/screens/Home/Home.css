@@ -1,0 +1,29 @@
+.carousel {
+  width: 70%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 2vh;
+}
+
+.carousel-container {
+  display: flex;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 200%;
+  transition: 'transform 1s linear 1s',
+}
+
+.carousel-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#containerhome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
