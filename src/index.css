@@ -11,3 +11,6 @@
 .button:hover {
   cursor: pointer;
 }
+body {
+  overflow-x: hidden;
+}

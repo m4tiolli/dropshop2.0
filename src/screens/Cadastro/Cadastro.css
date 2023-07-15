@@ -1,0 +1,123 @@
+#containerlogin {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("../../assets/fundo_cadastro.jpg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #blocklogin {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    position: relative;
+  }
+  
+  .divinput {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    margin: 2vh 0;
+  }
+  
+  .spaninput {
+    position: absolute;
+    left: 3%;
+    color: #888;
+    z-index: 1;
+    font-size: small;
+  }
+  
+  .input {
+    border: none;
+    outline: none;
+    z-index: 5;
+  }
+  
+  .input:focus ~ .spaninput {
+    top: -15px !important;
+    transition: 0.4s !important;
+    color: #2b1c0f !important;
+    font-size: x-small !important;
+  }
+  
+  .underline {
+    height: 2px;
+    display: block;
+  }
+  
+  .input:focus ~ .underline {
+    background-color: #2b1c0f;
+    animation: fill 0.4s ease-out;
+  }
+  
+  #containerbotoes > button {
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .entrar {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border: none;
+    padding: 0.5em 3vw;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2b1c0f;
+  }
+  
+  .entrar:hover {
+    opacity: 0.9;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.4);
+  }
+  
+  .entrar:active {
+    transform: translateY(2px);
+    opacity: 0.7;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  label:hover {
+    cursor: text;
+  }
+  
+  .eye {
+    opacity: 0;
+  }
+  
+  .input:focus ~ .eye {
+    opacity: 1;
+  }
+  
+  .esqueceu {
+  font-size: small;
+  color: #2b1c0f;
+  text-align: center;
+  }
+  
+  .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  }
+  
+  @keyframes fill {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
