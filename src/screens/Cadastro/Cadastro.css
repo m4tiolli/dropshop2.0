@@ -1,4 +1,4 @@
-#containerlogin {
+#containercadastro {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -11,7 +11,7 @@
     align-items: center;
   }
   
-  #blocklogin {
+  #blockcadastro {
     background-color: #fff;
     border-radius: 10px;
     padding: 5rem;

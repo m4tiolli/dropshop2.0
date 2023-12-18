@@ -6,18 +6,17 @@
   background-image: url("../../assets/fundo_cadastro.jpg");
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
 
 #blocklogin {
   background-color: #fff;
   border-radius: 10px;
-  padding: 5rem;
+  padding: 3rem 5rem;
   display: flex;
   flex-direction: column;
-  gap: 5vh;
+  gap: 3vh;
   align-items: center;
   position: relative;
 }
@@ -27,6 +26,9 @@
   height: fit-content;
   position: relative;
   margin: 2vh 0;
+  background-color: #f3f3f3;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 .spaninput {
@@ -41,6 +43,7 @@
   border: none;
   outline: none;
   z-index: 5;
+  background-color: transparent;
 }
 
 .input:focus ~ .spaninput {
@@ -53,6 +56,12 @@
 .underline {
   height: 2px;
   display: block;
+}
+
+.underlinelink {
+  height: 1px;
+  display: block;
+  margin: auto;
 }
 
 .input:focus ~ .underline {
@@ -101,15 +110,43 @@ label:hover {
 }
 
 .esqueceu {
-font-size: small;
-color: #2b1c0f;
-text-align: center;
+  font-size: small;
+  color: #2b1c0f;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.esqueceu:first-child::after {
+  width: 70%;
+  left: 15%;
+}
+
+.esqueceu:last-child::after {
+  width: 100%;
+  left: 0;
+}
+
+.esqueceu::after {
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  background-color: #2b1c0f;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.esqueceu:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .buttons {
-display: flex;
-flex-direction: column;
-gap: 1vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
 }
 
 @keyframes fill {
@@ -117,6 +154,6 @@ gap: 1vh;
     width: 0%;
   }
   100% {
-    width: 100%;
+    width: 70%;
   }
 }
